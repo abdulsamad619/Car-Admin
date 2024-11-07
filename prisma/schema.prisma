@@ -1,0 +1,17 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+model Rates {
+  ride_id             Int        @id @default(autoincrement())
+  user_id         Int
+  base_fare  Int  
+  additional_charges    Int
+  distance_fare   Int
+  time_fare     Int
+  @@map("rates")  
+}

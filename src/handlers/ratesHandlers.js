@@ -1,5 +1,4 @@
 const ratesService = require('../services/ratesService');
-const ratesService2 = require('../services/rideService');
 
 const { createError } = require('../utils/createError');
 
